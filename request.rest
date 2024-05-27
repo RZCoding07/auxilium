@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJKb2huIERvZSIsIm1haWwiOiJyaXpreUBnbWFpbC5jb20iLCJpYXQiOjE3MTY3MTU3MzAsImV4cCI6MTcxNjcxNjYzMH0.D-vw_rwy4HCBwV6h6S41Gs_Vz6GwzevMw-JRaTonGeo
+
+###
+GET http://localhost:5000/smartphones
+Authorization: "Baarer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJTYXNhIiwibWFpbCI6InNhc2FAZ21haWwuY29tIiwiaWF0IjoxNzE2NzE3MjU2LCJleHAiOjE3MTY3MTgxNTZ9.eGxBZ59maadcvdRtvEEUeU3iJUtQe35b0UOIcEzcbrA"
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Aisyah",
+    "email": "ais@gmail.com",
+    "password": "123456",
+    "confirmPassword" : "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "rizky@gmail.com",
+    "password": "123456"    
+}
